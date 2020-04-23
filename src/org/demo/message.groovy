@@ -1,5 +1,5 @@
 package org.demo
 
 def print() {
-  sh 'echo "Hello World!"'
+  sh 'echo "Congrats! your deployment is successful!!!"'
 }
