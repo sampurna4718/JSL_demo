@@ -1,5 +1,7 @@
 @Library('my-shared-library') _
 
+import org.demo.message
+
 pipeline {
     agent any 
     environment {
@@ -49,6 +51,17 @@ pipeline {
             steps {
                 script {
                     deployApp()
+                }
+            }
+        }
+
+        stage('Success Message') {
+            agent any
+            steps {
+                script {
+                    def msg = new org.demo.message()
+                    msg.print()
+
                 }
             }
         }
