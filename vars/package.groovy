@@ -1,3 +1,3 @@
-def call(Map params) {
+def call() {
     sh "docker build -t \${APP_NAME}:\${BUILD_NUMBER} ."
 }

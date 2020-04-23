@@ -1,3 +1,3 @@
-def call(Map params) {
+def call() {
     sh "gradle clean build"
 }
