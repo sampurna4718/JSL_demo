@@ -9,6 +9,7 @@ def createDockerfile(){
             writeFile file: 'Dockerfile', text: dockerfile
         }
     }
+}
 
 def createSonarFile(){
     if (fileExists('sonar.gradle')){
@@ -21,3 +22,4 @@ def createSonarFile(){
             writeFile file: 'sonar.properties', text: sonar
         }
     }
+}
